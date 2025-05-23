@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="REGISTER">
+    <div class="overlap">
+      <div class="text-wrapper-4">Register</div>
+      <hr class="register-divider">
+    </div>
+    <form>
+      <div class="overlap-group">
+        <label class="text-wrapper" for="first-name">First Name</label>
+        <input class="rectangle" type="text" id="first-name" name="first-name" required>
+      </div>
+      <div class="overlap-group" style="top: 230px; left: 30px; display: flex; gap: 20px;">
+        <div style="flex: 1;">
+          <label class="text-wrapper" for="middle-name">Middle Name</label>
+          <input class="rectangle rectangle-half" type="text" id="middle-name" name="middle-name">
+        </div>
+        <div style="flex: 1;">
+          <label class="text-wrapper" for="surname">Surname</label>
+          <input class="rectangle rectangle-half" type="text" id="surname" name="surname" required>
+        </div>
+      </div>
+      <div class="overlap-group" style="top: 370px; left: 30px; display: flex; gap: 20px;">
+        <div style="flex: 1; position: relative;">
+          <label class="text-wrapper" for="gender">Gender</label>
+<select class="rectangle gender-dropdown" id="gender" name="gender" required>
+  <option value="" disabled selected>--</option>
+  <option value="female">Female</option>
+  <option value="male">Male</option>
+  <option value="nonbinary">Non-binary</option>
+  <option value="transgender">Transgender</option>
+  <option value="genderqueer">Genderqueer</option>
+  <option value="agender">Agender</option>
+  <option value="prefer_not_to_say">Prefer not to say</option>
+  <option value="other">Other</option>
+</select>
+        </div>
+        <div style="flex: 3;">
+          <label class="text-wrapper" for="mobile">Mobile Number</label>
+          <input class="rectangle input-mobile" type="tel" id="mobile" name="mobile" required>
+        </div>
+      </div>
+      <div class="overlap-group" style="top: 510px; left: 30px;">
+        <label class="text-wrapper" for="email">Email</label>
+        <input class="rectangle" type="email" id="email" name="email" required>
+      </div>
+      <div class="overlap-group" style="top: 580px; left: 30px;">
+        <label class="text-wrapper" for="birthdate">Birth Date</label>
+        <div style="display: flex; gap: 20px; margin-top: 10px;">
+          <select class="rectangle year-dropdown" id="year" name="year" required style="flex: 1;">
+            <option value="">Year</option>
+          </select>
+          <script>
+            // Populate year dropdown with a range (e.g., 1950 to current year)
+            const yearSelect = document.getElementById('year');
+            const currentYear = new Date().getFullYear();
+            for (let y = currentYear; y >= 1950; y--) {
+              const option = document.createElement('option');
+              option.value = y;
+              option.textContent = y;
+              yearSelect.appendChild(option);
+            }
+          </script>
+          <select class="rectangle month-dropdown" id="month" name="month" required style="flex: 1;">
+            <option value="">Month</option>
+          </select>
+          <script>
+            // Populate month dropdown with all months
+            const monthSelect = document.getElementById('month');
+            const months = [
+              'January', 'February', 'March', 'April', 'May', 'June',
+              'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            months.forEach((month, idx) => {
+              const option = document.createElement('option');
+              option.value = (idx + 1).toString().padStart(2, '0');
+              option.textContent = month;
+              monthSelect.appendChild(option);
+            });
+          </script>
+            <select class="rectangle day-dropdown" id="day" name="day" required style="flex: 1;">
+            <option value="">Day</option>
+            <!-- Days 1 to 31 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            </select>
+        </div>
+      </div>
+      <div class="overlap-group" style="top: 650px; left: 30px;">
+        <label class="text-wrapper" for="password">Password</label>
+        <input class="rectangle" type="password" id="password" name="password" required>
+      </div>
+      <div class="overlap-group" style="top: 720px; left: 30px;">
+        <label class="text-wrapper" for="confirm-password">Confirm Password</label>
+        <input class="rectangle" type="password" id="confirm-pa</span>ssword" name="confirm-password" required>
+      </div>
+      <div class="overlap-group" style="top: 790px; left: 30px; display: flex; align-items: center;">
+        <input type="checkbox" id="terms" name="terms">
+        <label class="text-wrapper-14" for="terms">Accept Terms and Services</label>
+      </div>
+      <div class="overlap-2">
+        <button class="proceed-btn" type="submit">Proceed</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
