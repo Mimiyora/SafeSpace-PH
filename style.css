@@ -1,0 +1,138 @@
+.to-s {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 16px; /* Adds space around the modal */
+  box-sizing: border-box;
+}
+
+/* Overlay background */
+.tos-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(57, 16, 95, 0.4);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.tos-overlay.active {
+  display: flex;
+}
+
+/* Modal container */
+.to-s .div {
+  width: 100%;
+  max-width: 1110px;
+  height: auto;
+  max-height: 90vh;
+  background: #fff;
+  border-radius: 26.63px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(57, 16, 95, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px;
+  box-sizing: border-box;
+}
+
+/* Scrollable content */
+.to-s .content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  width: 100%;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #b39ddb #f3e5f5;
+  margin-top: 16px;
+}
+
+.to-s .content::-webkit-scrollbar {
+  width: 10px;
+  background: #f3e5f5;
+}
+
+.to-s .content::-webkit-scrollbar-thumb {
+  background: #b39ddb;
+  border-radius: 8px;
+}
+
+.to-s .welcome-to-wrapper {
+  width: 100%;
+  padding: 0;
+  margin-top: 16px;
+  position: relative;
+}
+
+.to-s .welcome-to {
+  position: relative;
+  width: 100%;
+  font-family: "undefined-Regular", Helvetica;
+  font-weight: 300;
+  color: #391053;
+  font-size: 19.2px;
+  line-height: 1.5;
+}
+
+.to-s .TOS-header {
+  width: 100%;
+  max-width: 946px;
+  margin: 32px auto 16px;
+  position: relative;
+}
+
+.to-s .overlap {
+  width: 100%;
+  max-width: 1110px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 26.63px 26.63px 0 0;
+  background-color: #ffffff;
+  padding: 32px 40px 0;
+  box-sizing: border-box;
+}
+
+.to-s .group {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.to-s .text-wrapper,
+.to-s .text-wrapper-2 {
+  font-family: "Inter", Helvetica;
+  color: #39105f;
+  line-height: 1.4;
+}
+
+.to-s .text-wrapper {
+  font-weight: 900;
+  font-size: 37.8px;
+  margin-bottom: 8px;
+}
+
+.to-s .text-wrapper-2 {
+  font-weight: 700;
+  font-size: 19.2px;
+}
+
+.tos-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #39105f;
+  cursor: pointer;
+  z-index: 10;
+}
