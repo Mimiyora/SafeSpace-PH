@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSpace PH - Case Handling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="https://i.ibb.co/qYYZs46L/logo.png"  alt="SafeSpace PH Logo" class="sidebar-logo">
+            <h1 class="sidebar-title">SafeSpace PH</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <svg class="sidebar-nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001 1h3v-3m-3 3h3v-3m-3 0a1 1 0 01-1-1v-3m10 0a1 1 0 00-1-1v-3m-3 3h3v-3m-3 0a1 1 0 01-1-1v-3" />
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="case-handling.html" class="active">
+                        <svg class="sidebar-nav-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                        Case Handling
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-user-profile"> <div class="sidebar-user-avatar">BM</div>
+            <span>BM Bill</span>
+        </div>
+        </div>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2 class="main-header-title">Case Handling</h2>
+            <div class="main-header-user">
+                <div class="main-header-user-avatar">BM</div>
+                <span class="main-header-user-name">Bill</span>
+                <svg id="mainMenuIcon" class="main-header-menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <div id="userDropdown" class="dropdown-menu">
+                    <ul>
+                        <li><a href="account-settings.html">Account Settings</a></li> <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="table-section">
+            <div class="overflow-x-auto">
+                <table class="case-table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Phone Number</th>
+                            <th>Appointment Date & Time</th>
+                            <th>Status</th>
+                            <th class="action-header">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jessie</td>
+                            <td>Santos</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sarah</td>
+                            <td>Martin</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge booked">Booked</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nicole</td>
+                            <td>Castillo</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge completed">Completed</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cameron</td>
+                            <td>Williamson</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>Leslie</td>
+                            <td>Morales</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>Savannah</td>
+                            <td>Geraldez</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Darlene</td>
+                            <td>Lascota</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge completed">Completed</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ronald</td>
+                            <td>Rovira</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kathryn</td>
+                            <td>Mariano</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Caitlyn</td>
+                            <td>Velasquez</td>
+                            <td>+63 9326549110</td>
+                            <td>21-May-2025 at 11:00 AM</td>
+                            <td>
+                                <span class="status-badge open">Open</span>
+                            </td>
+                            <td class="action-buttons">
+                                <button class="action-button accept">Accept</button>
+                                <button class="action-button reject">Reject</button>
+                                <button class="action-icon-button">
+                                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <nav class="pagination-nav" aria-label="Pagination">
+                <a href="#" class="pagination-link">Previous</a>
+                <a href="#" aria-current="page" class="pagination-link active">1</a>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <a href="#" class="pagination-link">Next</a>
+            </nav>
+        </div>
+    </main>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Confirmation Message for Accept/Reject
+            const acceptButtons = document.querySelectorAll('.action-button.accept');
+            const rejectButtons = document.querySelectorAll('.action-button.reject');
+            const deleteButtons = document.querySelectorAll('.action-icon-button'); // Get all delete buttons
+
+            acceptButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    alert('Case Accepted successfully!');
+                });
+            });
+
+            rejectButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    alert('Case Rejected!');
+                });
+            });
+
+            
+            deleteButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent any default button action
+                    const confirmDelete = confirm('Are you sure you want to delete this case?');
+                    if (confirmDelete) {
+                        alert('Case deleted successfully!');
+                    } else {
+                        alert('Delete action cancelled.');
+                    }
+                });
+            });
+
+
+            // Dropdown Menu for Main Header (remains unchanged)
+            const mainMenuIcon = document.getElementById('mainMenuIcon');
+            const userDropdown = document.getElementById('userDropdown');
+
+            if (mainMenuIcon && userDropdown) {
+                mainMenuIcon.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    userDropdown.classList.toggle('show');
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!userDropdown.contains(event.target) && !mainMenuIcon.contains(event.target)) {
+                        userDropdown.classList.remove('show');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
