@@ -1,72 +1,69 @@
 /* style.css */
 
 :root {
-    --primary-color: #5A2675; /* Main accent purple */
-    --secondary-color: #C9A8F1; /* Lighter purple for accents, borders */
-    --dark-primary-color: #391053; /* Very dark purple for sidebar/strong elements */
-    --text-color: #2F1435; /* Dark purple for general text */
-    --light-text-color: #666; /* Softer gray for less emphasized text */
+    --primary-color: #5A2675; 
+    --secondary-color: #C9A8F1; 
+    --dark-primary-color: #391053; 
+    --text-color: #2F1435;
+    --light-text-color: #666; 
     --white: #fff;
-    --shadow-color: rgba(0, 0, 0, 0.08); /* Lighter, diffused shadow */
-    --hover-shadow-color: rgba(0, 0, 0, 0.15); /* Slightly stronger hover shadow */
+    --shadow-color: rgba(0, 0, 0, 0.08); 
+    --hover-shadow-color: rgba(0, 0, 0, 0.15); 
     --border-radius: 8px;
     --padding-base: 20px;
-    --sidebar-width: 250px; /* Define sidebar width here */
-    --transition-speed: 0.3s ease; /* Consistent transition speed */
+    --sidebar-width: 250px;
+    --transition-speed: 0.3s ease; 
 }
 
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6; /* Light background for the overall page */
-    display: flex; /* Keep flexbox for main layout */
+    background-color: #f4f7f6; 
+    display: flex; 
     min-height: 100vh;
     color: var(--text-color);
-    line-height: 1.6; /* Improved readability */
-}
+    line-height: 1.6; 
 
 .sidebar {
     width: var(--sidebar-width);
-    background-color: var(--dark-primary-color); /* Applied dark-primary-color */
+    background-color: var(--dark-primary-color); 
     color: var(--white);
     padding: var(--padding-base) 0;
-    box-shadow: 2px 0 10px var(--shadow-color); /* Enhanced shadow */
+    box-shadow: 2px 0 10px var(--shadow-color);
     display: flex;
     flex-direction: column;
 
-    position: fixed; /* Ensures sidebar always stays visible without layout reflow issues */
+    position: fixed; 
     top: 0;
     left: 0;
-    height: 100vh; /* Takes full viewport height */
-    overflow-y: auto; /* Enable scrolling for long menus within the fixed sidebar */
-    z-index: 1000; /* Ensure it's above other content */
+    height: 100vh; 
+    overflow-y: auto; 
+    z-index: 1000;
 }
 
 .sidebar-header {
-    /* MODIFIED: Changed to row direction for side-by-side alignment */
+    
     display: flex;
-    flex-direction: row; /* Arranges items horizontally */
-    align-items: center; /* Vertically centers items in the row */
-    justify-content: center; /* Horizontally centers the group (logo + text) */
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
     padding-bottom: var(--padding-base);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin-bottom: var(--padding-base);
 }
 
-/* Styles for the logo image */
 .sidebar-logo-img {
-    width: 45px; /* Smaller width for side-by-side display */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 8px; /* Space between the logo and the text */
-}
+    width: 45px; 
+    height: auto; 
+    margin-right: 8px; 
 
 .sidebar-header .logo {
-    font-size: 22px; /* Slightly smaller font size to fit beside the logo */
+    font-size: 22px; 
     font-weight: 700;
     letter-spacing: -0.5px;
-    margin: 0; /* Remove any default margins that might push elements apart */
-    line-height: 1.2; /* Adjust line height for tighter vertical alignment if needed */
+    margin: 0; 
+    line-height: 1.2; 
 }
 
 .sidebar-menu ul {
@@ -440,4 +437,5 @@ body {
     border-color: var(--primary-color);
     outline: none;
     box-shadow: 0 0 0 2px rgba(90, 38, 117, 0.1);
+}
 }
