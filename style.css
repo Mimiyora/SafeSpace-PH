@@ -815,7 +815,7 @@ body {
             background-color: #4B5563;
         }
 
-        /* Responsive adjustments from previous version (for modal context if needed) */
+       
         @media (max-width: 768px) {
             /* Sidebar toggle from previous, if hamburger is implemented */
             /* .sidebar {
@@ -836,7 +836,7 @@ body {
             }
         }
         
-        /* Toast Notification Styles - Retained and integrated */
+        /*
         .toast {
             position: fixed;
             bottom: 20px;
@@ -871,9 +871,6 @@ body {
         }
 
 
-/* syattyy */
-
-/* Toast Message Styling */
 .toast-message {
     position: fixed;
     bottom: 30px; /* Adjust as needed */
@@ -914,7 +911,6 @@ body {
     border-radius: 5px;
 }
 
-/* Optional: If you want to differentiate the Confirm and Cancel buttons */
 .modal-actions #modalConfirmButton {
     background-color: red; /* Confirm button in red */
 }
