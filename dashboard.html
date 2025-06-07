@@ -180,7 +180,7 @@
             let confirmCallback = null;
             let cancelCallback = null;
 
-            // Function to show the modal
+            
             function showModal(title, message, type, onConfirm, onCancel) {
                 modalTitle.textContent = title;
                 modalMessage.textContent = message;
@@ -189,14 +189,14 @@
                 customModal.classList.add('show');
             }
 
-            // Function to hide the modal
+         
             function hideModal() {
                 customModal.classList.remove('show');
                 confirmCallback = null;
                 cancelCallback = null;
             }
 
-            // Function to show toast notification
+       
             function showToast(message, type) {
                 toastMessage.textContent = message;
                 // Add specific class for success/error/info if desired for different colors
@@ -213,7 +213,7 @@
                 }, 3000); // Hide after 3 seconds
             }
 
-            // Dropdown menu toggle
+           
             if (mainMenuIcon && userDropdown && mainHeaderUser) {
                 mainMenuIcon.addEventListener('click', (event) => {
                     event.stopPropagation();
@@ -229,7 +229,7 @@
                 });
             }
 
-            // Save button click handler
+       
             if (saveButton) {
                 saveButton.addEventListener('click', (event) => {
                     event.preventDefault(); // Prevent default form submission if button is inside a form
@@ -252,7 +252,7 @@
                 });
             }
 
-            // Modal button event listeners
+         
             if (modalConfirmButton) {
                 modalConfirmButton.addEventListener('click', () => {
                     if (confirmCallback) {
@@ -269,7 +269,7 @@
                 });
             }
 
-            // Handle active state for sidebar navigation
+       
             const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
             sidebarLinks.forEach(link => {
                 if (link.href === window.location.href) {
