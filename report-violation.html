@@ -22,8 +22,8 @@
                         Dashboard
                     </div>
                 </a>
-                <a href="report-violation.html" class="menu-link">
-                    <div class="menu-item">
+                <a href="report-violation.html" class="menu-link active">
+                    <div class="menu-item active">
                         <span class="material-icons">gavel</span>
                         Report Violation
                     </div>
@@ -48,10 +48,11 @@
                 </a>
             </div>
         </div>
-        <div class="main-content">
+        
+             <div class="main-content">
             <div class="top-bar-with-header">
                 <div class="form-header-section">
-                    <h1>Report Violation Form</h1>
+                    <h1>Report Violation Form.</h1>
                     <p class="subtitle">WE CAN HELP TO PROTECT YOU.</p>
                 </div>
                 <div class="user-info">
@@ -60,84 +61,84 @@
                     <span class="material-icons expand-icon">expand_more</span>
                 </div>
             </div>
-            <div class="report-form-section">
-                <div class="form-content">
-                    <div class="instructions-section">
-                        <p class="intro-text">
-                            We are here to listen, document, and act.<br>
-                            If you have experienced or witnessed a violation under the Safe Spaces Act — whether in a public area, online, school, or workplace — you can report it through this confidential form.<br>
-                        </p>
-                        <h3>INSTRUCTIONS</h3>
-                        <ol>
-                            <li>Provide clear and honest details about the incident.</li>
-                            <li>You may choose to report anonymously, but giving your
-                                contact information will help us provide support and
-                                connect you with legal help if needed.</li>
-                            <li>All information submitted is kept strictly confidential and
-                                used only to assist you or take
-                                appropriate action.</li>
-                        </ol>
 
-                        <div class="input-group">
-                            <label for="your-name">Your Name</label>
-                            <input type="text" id="your-name" placeholder="Optional">
-                        </div>
-                        <div class="input-group">
-                            <label for="phone">Phone</label>
-                            <input type="text" id="phone" placeholder="Optional">
-                        </div>
-                        <div class="input-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Optional">
-                        </div>
-                    </div>
+                <div class="report-form-section">
+                    <div class="form-content">
+                        <section class="instructions-section">
+                            <p class="intro-text">
+                                We are here to listen, document, and act.<br>
+                                If you have experienced or witnessed a violation under the Safe Spaces Act — whether in a public area, online, school, or workplace — you can report it through this confidential form.<br>
+                            </p>
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Provide clear and honest details about the incident.</li>
+                                <li>You may choose to report anonymously, but giving your contact information will help us provide support and connect you with legal help if needed.</li>
+                                <li>All information submitted is kept strictly confidential and used only to assist you or take appropriate action.</li>
+                            </ol>
+                        </section>
 
-                    <div class="form-fields-section">
-                        <div class="form-group">
-                            <label>Type of Violation</label>
-                            <div class="button-group">
-                                <button class="type-button active">Public Harassment</button>
-                                <button class="type-button">Online Harassment</button>
-                                <button class="type-button">Workplace/School Harassment</button>
-                                <button class="type-button">Others</button>
+                        <section class="personal-info-section">
+                            <h3>Contact Information <span style="font-weight:400; color:#888; font-size:0.95em;">(Optional)</span></h3>
+                            <div class="input-group">
+                                <label for="your-name">Your Name</label>
+                                <input type="text" id="your-name" placeholder="Optional">
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="description">Description of the Incident</label>
-                            <textarea id="description" placeholder="Type your description here..."></textarea>
-                            <p class="hint-text">This should be a comprehensive description.</p>
-                        </div>  
-
-                        <div class="form-group">
-                            <label>Do you wish to request legal consultation?</label>
-                            <div class="button-group">
-                                <button class="yes-no-button">Yes</button>
-                                <button class="yes-no-button active">No</button>
+                            <div class="input-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" placeholder="Optional">
                             </div>
-                        </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Optional">
+                            </div>
+                        </section>
 
-                        <div class="form-group">
-                            <label>Do you have any supporting files?</label>
-                            <input type="file" id="fileInput" multiple style="display: none">
-                            <button class="upload-button" onclick="document.getElementById('fileInput').click()">Upload File</button>
-                            <div id="fileList" class="file-list"></div>
-                        </div>
+                        <section class="form-fields-section">
+                            <h3>Incident Details</h3>
+                            <div class="form-group">
+                                <label>Type of Violation</label>
+                                <div class="button-group">
+                                    <button class="type-button active">Public Harassment</button>
+                                    <button class="type-button">Online Harassment</button>
+                                    <button class="type-button">Workplace/School Harassment</button>
+                                    <button class="type-button">Others</button>
+                                </div>
+                            </div>
 
-                        <div class="input-group">
-                            <label for="additional-notes">Additional Notes or Questions</label>
-                            <textarea id="additional-notes" placeholder="Type your notes here..." class="description-box"></textarea>
-                            <p class="hint-text">Optional</p>
-                        </div>
+                            <div class="form-group">
+                                <label for="description">Description of the Incident</label>
+                                <textarea id="description" placeholder="Type your description here..."></textarea>
+                                <p class="hint-text">This should be a comprehensive description.</p>
+                            </div>  
 
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="consent">
-                            <label for="consent">By submitting this form, you agree that the information
-                                you've shared will be used to assess your case and, if
-                                requested, connect you with pro bono legal assistance.</label>
-                        </div>
+                            <div class="form-group">
+                                <label>Do you wish to request legal consultation?</label>
+                                <div class="button-group">
+                                    <button class="yes-no-button">Yes</button>
+                                    <button class="yes-no-button active">No</button>
+                                </div>
+                            </div>
 
-                        <button type="submit" class="submit-report-button" id="submitReportBtn">Submit Report</button>
+                            <div class="form-group">
+                                <label>Do you have any supporting files?</label>
+                                <input type="file" id="fileInput" multiple style="display: none">
+                                <button class="upload-button" onclick="document.getElementById('fileInput').click()">Upload File</button>
+                                <div id="fileList" class="file-list"></div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="additional-notes">Additional Notes or Questions</label>
+                                <textarea id="additional-notes" placeholder="Type your notes here..." class="description-box"></textarea>
+                                <p class="hint-text">Optional</p>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="consent">
+                                <label for="consent">By submitting this form, you agree that the information you've shared will be used to assess your case and, if requested, connect you with pro bono legal assistance.</label>
+                            </div>
+
+                            <button type="submit" class="submit-report-button" id="submitReportBtn">Submit Report</button>
+                        </section>
                     </div>
                 </div>
             </div>
